@@ -4,7 +4,7 @@
 <div class="container">
   <div class="top">
     <p class="title">予定一覧</p>
-    <div class="new_button"><%= link_to("新規追加", :new_event, class:"no_deco_white") %></div>
+    <div class="new_button"><%= link_to "新規追加", :new_event, class:"no_deco_white" %></div>
   </div>
   <div class="center">
     <table>
@@ -18,21 +18,19 @@
       </tr>
       <% @events.each do |event| %>
       <div class="events_item">
-      <tr>
-        <td><%= event.id %></td>
-        <td><%= event.name %></td>
-        <td><%= event.start_at.strftime("%Y/%m/%d") %></td>
-        <td><%= event.finish_at.strftime("%Y/%m/%d") %></td>
-        <td>
-        <% if event.all_day == true %>
-          ○
-        <% end %>
-        </td>
-        <td><%= event.updated_at.strftime("%Y/%m/%d %H:%M") %></td>
-        <td><%= link_to("詳細", "/events/#{event.id}") %></td>
-        <td><%= link_to("編集", "/events/#{event.id}/edit") %></td>
-        <td><%= link_to("削除", "/events/#{event.id}",method: :delete, data: {confirm: "予定を削除しますか？"}) %></td>
-      </tr>
+        <tr>
+          <td><%= event.id %></td>
+          <td><%= event.name %></td>
+          <td><%= event.start_at.strftime("%Y/%m/%d") %></td>
+          <td><%= event.finish_at.strftime("%Y/%m/%d") %></td>
+          <td><% if event.all_day == true %>
+            ○
+          <% end %></td>
+          <td><%= event.updated_at.strftime("%Y/%m/%d %H:%M") %></td>
+          <td><%= link_to "詳細", "/events/#{event.id}" %></td>
+          <td><%= link_to "編集", "/events/#{event.id}/edit" %></td>
+          <td><%= link_to "削除", "/events/#{event.id}", method: :delete %></td>
+        </tr>
       </div>
       <% end %>
     </table>
