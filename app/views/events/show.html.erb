@@ -14,11 +14,11 @@
     <table class="show_table">
       <tr>
         <th>開始日</th>
-        <td><%= @event.start_at.to_s(:datetime_jp) %></td>
+        <td><%= @event.start_at.strftime("%Y/%m/%d") %></td>
       </tr>
       <tr>
         <th>終了日</th>
-        <td><%= @event.finish_at.to_s(:datetime_jp) %></td>
+        <td><%= @event.finish_at.strftime("%Y/%m/%d") %></td>
       </tr>
       <tr>
         <th>終日</th>

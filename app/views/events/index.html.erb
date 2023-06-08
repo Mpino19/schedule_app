@@ -31,7 +31,7 @@
         <td><%= event.updated_at.strftime("%Y/%m/%d %H:%M") %></td>
         <td><%= link_to("詳細", "/events/#{event.id}") %></td>
         <td><%= link_to("編集", "/events/#{event.id}/edit") %></td>
-        <td><%= link_to("削除", "events/#{event.id}", method: :delete, data: {confirm: "予定を削除しますか？"}) %></td>
+        <td><%= link_to("削除", "/events/#{event.id}",method: :delete, data: {confirm: "予定を削除しますか？"}) %></td>
       </tr>
       </div>
       <% end %>

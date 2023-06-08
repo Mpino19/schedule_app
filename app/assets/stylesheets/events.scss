@@ -23,7 +23,6 @@ body {
   background-color: white;
   width: 100%;
 }
-
 .top {
   display: flex;
   justify-content: space-between;
@@ -35,13 +34,11 @@ body {
 .new_button {
   width: 120px;
   height: 40px;
-  
   font-size: 18px;
   margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  
   background-color: blue;
 }
 .no_deco_white {
@@ -55,7 +52,6 @@ body {
 .save_button {
   text-decoration: none;
   margin: 0 20px;
-  
 }
 table {
   width: 100%;
@@ -64,29 +60,22 @@ table {
 }
 .show_table {
   text-align: left;
-  
 }
 .show_table th{
-  
   background-color: #CFF;
   width: 30%;
 }
 .show_table td{
-  
   background-color: #eFF;
 }
-
 .buttons {
   display: flex;
   justify-content: right;
-  
- 
 }
 .bottom {
   display: flex;
   justify-content: space-between;
   background-color: white;
-  
   margin-top: 20px;
 }
 .total {
@@ -97,4 +86,13 @@ table {
 }
 .red {
   color: red;
+}
+.memo_box {
+  height: 100px;
+}
+.flash {
+  background-color: orange;
+  width: 200px;
+  text-align: center;
+  margin: 0 auto;
 }

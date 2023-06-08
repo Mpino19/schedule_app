@@ -7,34 +7,32 @@
   </div>
   <%= form_with model: @event do |f| %>
   <div class="center">
-  <table class="show_table">
-    <tr>
-      <th><%= f.label :name ,"タイトル" %><span class="red"> *</span></th>
-      <td><%= f.text_field :name %></td>
-    </tr>
-    <tr>
-      <th><%= f.label :start_at ,"開始日" %><span class="red"> *</span></th>
-      <td><%= f.date_field :start_at %></td>
-    </tr>
-    <tr>
-      <th><%= f.label :finish_at ,"終了日" %><span class="red"> *</span></th>
-      <td><%= f.date_field :finish_at %></td>
-    </tr>
-    <tr>
-      <th><%= f.label :all_day, "終日の場合はチェック", value: true %></th>
-      <td><%= f.check_box :all_day %></td>
-    </tr>
-    <tr>
-      <th><%= f.label :memo ,"スケジュールメモ" %></th>
-      <td><%= f.text_area :memo %></td>
-    </tr>
-  </table>
-  
+    <table class="show_table">
+      <tr>
+        <th><%= f.label :name ,"タイトル" %><span class="red"> *</span></th>
+        <td><%= f.text_field :name %></td>
+      </tr>
+      <tr>
+        <th><%= f.label :start_at ,"開始日" %><span class="red"> *</span></th>
+        <td><%= f.date_field :start_at %></td>
+      </tr>
+      <tr>
+        <th><%= f.label :finish_at ,"終了日" %><span class="red"> *</span></th>
+        <td><%= f.date_field :finish_at %></td>
+      </tr>
+      <tr>
+        <th><%= f.label :all_day, "終日の場合はチェック", value: true %></th>
+        <td><%= f.check_box :all_day %></td>
+      </tr>
+      <tr>
+        <th><%= f.label :memo ,"スケジュールメモ" %></th>
+        <td><%= f.text_area :memo, class:"memo_box"%></td>
+      </tr>
+    </table>
   </div>
   <div class="buttons">
     <button class="white_button"><%= link_to("キャンセル", :events, class:"no_deco_black") %></button>
     <div class="save_button"><%= f.submit "保存" %></div>
   </div>
-  
   <% end %>
 </div>
