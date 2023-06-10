@@ -1,0 +1,9 @@
+ja:
+  activerecord:
+    errors:
+      models:
+        event:
+          attributes:
+            name:
+              blank: "空になっています。入力してください。"
+            finish_at: "終了日"

@@ -5,6 +5,7 @@
   <div class="top">
     <p class="title">予定の新規追加</p>
   </div>
+  <%= render "shared/error", obj: @event %>
   <%= form_with model: @event do |f| %>
   <div class="center">
     <table class="show_table">
