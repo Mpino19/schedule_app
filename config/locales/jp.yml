@@ -1,9 +1,11 @@
 ja:
   activerecord:
+    attributes:
+      event:
+        name: タイトル
+        start_at: 開始日
+        finish_at: 終了日
     errors:
       models:
         event:
-          attributes:
-            name:
-              blank: "空になっています。入力してください。"
-            finish_at: "終了日"
+          blank: が未入力です
