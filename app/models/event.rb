@@ -12,7 +12,7 @@ class Event < ApplicationRecord
   def start_finish_check
     if start_at.present? && finish_at.present?
       errors.add(:finish_at, "は開始日以降で設定してください") unless
-      self.start_at < self.finish_at
+      self.start_at <= self.finish_at
     end
   end
 
