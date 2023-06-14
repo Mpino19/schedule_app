@@ -1,0 +1,11 @@
+ja:
+  activerecord:
+    attributes:
+      event:
+        name: タイトル
+        start_at: 開始日
+        finish_at: 終了日
+    errors:
+      models:
+        event:
+          blank: が未入力です

@@ -1,0 +1,98 @@
+// Place all the styles related to the events controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+  background-color: #eee;
+}
+.header {
+  background-color: navy;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+}
+.container {
+  margin: 30px 300px;
+}
+.show_container {
+  margin: 30px 400px;
+}
+.center {
+  background-color: white;
+  width: 100%;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  font-size: 24px;
+  font-weight: bolder;
+}
+.new_button {
+  width: 120px;
+  height: 40px;
+  font-size: 18px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+}
+.no_deco_white {
+  text-decoration: none;
+  color: white;
+}
+.no_deco_black {
+  text-decoration: none;
+  color: black;
+}
+.save_button {
+  text-decoration: none;
+  margin: 0 20px;
+}
+table {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+}
+.show_table {
+  text-align: left;
+}
+.show_table th{
+  background-color: #CFF;
+  width: 30%;
+}
+.show_table td{
+  background-color: #eFF;
+}
+.buttons {
+  display: flex;
+  justify-content: right;
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  margin-top: 20px;
+}
+.total {
+  font-size: 18px;
+}
+.today {
+  color: gray;
+}
+.red {
+  color: red;
+}
+.memo_box {
+  height: 100px;
+}
+.flash {
+  background-color: orange;
+  width: 200px;
+  text-align: center;
+  margin: 0 auto;
+}

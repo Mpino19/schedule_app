@@ -1,0 +1,36 @@
+
+<div class="header">
+  <h2>スケジュール管理アプリ</h2>
+</div>
+<div class="show_container">
+  <div class="top_left">
+    <div class="return"><%= link_to "一覧に戻る", :events %></div>
+  </div>
+  <div class="top">
+    <p class="title"><%= @event.name %></p>
+    <div class="new_button"><%= link_to("編集", "/events/#{@event.id}/edit", class:"no_deco_white") %></div>
+  </div>
+  <div class="center">
+    <table class="show_table">
+      <tr>
+        <th>開始日</th>
+        <td><%= @event.start_at.strftime("%Y/%m/%d") %></td>
+      </tr>
+      <tr>
+        <th>終了日</th>
+        <td><%= @event.finish_at.strftime("%Y/%m/%d") %></td>
+      </tr>
+      <tr>
+        <th>終日</th>
+        <td><% if @event.all_day == true %>
+          ○
+        <% end %></td>
+      </tr>
+      <tr>
+        <th>スケジュールメモ</th>
+        <td><%= @event.memo %></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
